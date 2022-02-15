@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="400.0" style="-fx-background-color: #343434FF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provaesame1.CalculatorController">
+   <children>
+      <VBox prefHeight="550.0" prefWidth="400.0">
+         <children>
+            <TextField fx:id="tfDisplay" alignment="CENTER_RIGHT" prefWidth="340.0" style="-fx-background-color: #525252;" styleClass="inputtext" stylesheets="@calcstyle.css">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </TextField>
+            <Separator prefWidth="200.0" />
+            <GridPane hgap="10.0" prefHeight="483.0" prefWidth="400.0" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btn7" mnemonicParsing="false" onAction="#displayNumber" prefHeight="208.0" prefWidth="162.0" styleClass="buttonNum" stylesheets="@calcstyle.css" text="7" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn8" mnemonicParsing="false" onAction="#displayNumber" prefHeight="208.0" prefWidth="162.0" styleClass="buttonNum" stylesheets="@calcstyle.css" text="8" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn9" mnemonicParsing="false" onAction="#displayNumber" prefHeight="208.0" prefWidth="162.0" styleClass="buttonNum" stylesheets="@calcstyle.css" text="9" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnMul" mnemonicParsing="false" onAction="#selectOperation" prefHeight="208.0" prefWidth="162.0" styleClass="buttonOp" stylesheets="@calcstyle.css" text="*" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn4" mnemonicParsing="false" onAction="#displayNumber" prefHeight="208.0" prefWidth="162.0" styleClass="buttonNum" stylesheets="@calcstyle.css" text="4" textFill="WHITE" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn5" mnemonicParsing="false" onAction="#displayNumber" prefHeight="208.0" prefWidth="162.0" styleClass="buttonNum" stylesheets="@calcstyle.css" text="5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn6" mnemonicParsing="false" onAction="#displayNumber" prefHeight="208.0" prefWidth="162.0" styleClass="buttonNum" stylesheets="@calcstyle.css" text="6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSub" mnemonicParsing="false" onAction="#selectOperation" prefHeight="208.0" prefWidth="162.0" styleClass="buttonOp" stylesheets="@calcstyle.css" text="-" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn1" mnemonicParsing="false" onAction="#displayNumber" prefHeight="208.0" prefWidth="162.0" styleClass="buttonNum" stylesheets="@calcstyle.css" text="1" textFill="WHITE" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn2" mnemonicParsing="false" onAction="#displayNumber" prefHeight="208.0" prefWidth="162.0" styleClass="buttonNum" stylesheets="@calcstyle.css" text="2" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn3" mnemonicParsing="false" onAction="#displayNumber" prefHeight="208.0" prefWidth="162.0" styleClass="buttonNum" stylesheets="@calcstyle.css" text="3" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#selectOperation" prefHeight="208.0" prefWidth="162.0" styleClass="buttonOp" stylesheets="@calcstyle.css" text="+" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnE" mnemonicParsing="false" onAction="#displayNumber" prefHeight="208.0" prefWidth="162.0" styleClass="buttonNum" stylesheets="@calcstyle.css" text="e" textFill="WHITE" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn0" mnemonicParsing="false" onAction="#displayNumber" prefHeight="208.0" prefWidth="162.0" styleClass="buttonNum" stylesheets="@calcstyle.css" text="0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDot" mnemonicParsing="false" onAction="#displayDot" prefHeight="208.0" prefWidth="162.0" styleClass="buttonNum" stylesheets="@calcstyle.css" text="." textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnEq" mnemonicParsing="false" onAction="#calculateResult" prefHeight="208.0" prefWidth="162.0" styleClass="buttonEq" stylesheets="@calcstyle.css" text="=" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnPi" mnemonicParsing="false" onAction="#displayNumber" prefHeight="208.0" prefWidth="162.0" styleClass="buttonNum" stylesheets="@calcstyle.css" text="π" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnCE" mnemonicParsing="false" onAction="#delete" prefHeight="208.0" prefWidth="162.0" styleClass="buttonCanc" stylesheets="@calcstyle.css" text="CE" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnC" mnemonicParsing="false" onAction="#delete" prefHeight="208.0" prefWidth="162.0" styleClass="buttonCanc" stylesheets="@calcstyle.css" text="C" textFill="WHITE" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDiv" mnemonicParsing="false" onAction="#selectOperation" prefHeight="208.0" prefWidth="162.0" styleClass="buttonOp" stylesheets="@calcstyle.css" text="/" textFill="WHITE" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</Pane>

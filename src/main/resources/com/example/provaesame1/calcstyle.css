@@ -1,0 +1,84 @@
+.buttonNum
+{
+    -fx-background-color : #505050;
+    -fx-background-radius :  20;
+}
+.buttonNum:hover
+{
+    -fx-background-color : #737373;
+    -fx-background-radius :  20;
+}
+.buttonNum:pressed
+{
+    -fx-background-color : #989898;
+    -fx-background-radius :  20;
+}
+.buttonNum:focused
+{
+}
+
+.buttonEq
+{
+    -fx-background-color : #ffb254;
+    -fx-background-radius :  20;
+}
+.buttonEq:hover
+{
+    -fx-background-color : #ff9c17;
+    -fx-background-radius :  20;
+}
+.buttonEq:pressed
+{
+    -fx-background-color : #c76b00;
+    -fx-background-radius :  20;
+}
+.buttonEq:focused
+{
+}
+
+.buttonCanc
+{
+    -fx-background-color : #a2a2a2;
+    -fx-background-radius :  20;
+}
+.buttonCanc:hover
+{
+    -fx-background-color : #818181;
+    -fx-background-radius :  20;
+}
+.buttonCanc:pressed
+{
+    -fx-background-color : #5d5d5d;
+    -fx-background-radius :  20;
+}
+.buttonCanc:focused
+{
+}
+
+.buttonOp
+{
+    -fx-background-color : #ac54ff;
+    -fx-background-radius :  20;
+}
+.buttonOp:hover
+{
+    -fx-background-color : #9717ff;
+    -fx-background-radius :  20;
+}
+.buttonOp:pressed
+{
+    -fx-background-color : #6000c7;
+    -fx-background-radius :  20;
+}
+.buttonOp:focused
+{
+}
+
+.round-layout{
+    -fx-border-radius:50;
+    -fx-border-color:#D7D7D7;
+}
+
+.inputtext{
+    -fx-text-fill:white;
+}
