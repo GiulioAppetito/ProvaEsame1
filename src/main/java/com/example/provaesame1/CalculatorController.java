@@ -111,4 +111,5 @@ public class CalculatorController {
             tfDisplay.setText(Integer.toString(((int) result)));
         }
     }
+
 }
