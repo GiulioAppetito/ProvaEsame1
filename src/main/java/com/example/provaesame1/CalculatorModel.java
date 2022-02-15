@@ -1,6 +1,9 @@
 package com.example.provaesame1;
 
 public class CalculatorModel {
+    private CalculatorModel(){
+
+    }
     public static float sum(float a, float b){
         return a+b;
     }
